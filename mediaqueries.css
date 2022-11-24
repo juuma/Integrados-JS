@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+
+.header {
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    max-width: 992px;
+    z-index: 999;
+    padding: 0;
+}
+
+.navbar {
+    display: none
+}
+
+.logo-container img{
+    height: 115px;
+    cursor: pointer; 
+    transition: all 0.4s;
+}
+
+.header.logo-container img:hover{
+    transform: scale(1.1);
+}
+
+.navbar, .navbar-list {
+    display: none;
+    padding: 0 20px;
+    font-size: 18px;
+    font-family: 'Lalezar';
+}
+
+a {
+    display: none;
+    position: relative;
+    color: #cbc9c9;
+}
+
+.buttons {
+display: none;
+}
+
+.navbar, .menu-label i{
+    color: white;
+    display: flex;
+    height: 100px;
+}
+
+}
+
+/* Celu */
+@media (max-width: 576px) {
+
+.cart {
+    left: 0;
+    width: 100%;
+    border: none;
+}
+
+.cart-item {
+    flex-wrap: wrap;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 120px;
+width: 100%;
+max-width: 576px;
+padding: 0;
+}
+
+.navbar {
+display: none;
+}
+
+.logo-container img{
+height: 100px;
+padding: 0 0 0 5px;
+}
+
+.navbar, .navbar-list {
+display: none;
+padding: 0 20px;
+font-size: 18px;
+}
+
+a {
+display: inline;
+position: relative;
+color: #cbc9c9;
+}
+
+.buttons {
+display: none;
+}
+
+.navbar, .menu-label i{
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Hero Section */
+
+.hero-section {
+width: 100%;
+max-width: 576px;
+padding: 20px 0 20px 0;
+}
+
+.description {
+max-width: 576px;
+height: 250px;
+text-align:center;
+padding: 0 10px;
+}
+
+.description h1 {
+
+font-size: 39px;
+}
+
+.description h2 {
+font-size: 25px;
+padding: 0 0 15px 0;
+}
+
+.description h4 {
+text-align: center;
+font-size: 17px;
+}
+
+.btn-ver {
+margin: 5px;
+padding: 6px 20px;
+}
+
+
+.hero-img {
+display: none;
+width: 0;
+}
+
+/* Categories products */
+
+.categories {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 576px;
+padding: 10px 5px;
+}
+
+/* buttons categories */
+
+.gibson {
+background-size:contain;
+background-color: transparent;
+height: 50px;
+width: 50px;
+}
+
+.fender {
+background-size: contain;
+background-color: transparent;
+height: 50px;
+width: 50px;
+}
+
+.prs {
+background-size: contain;
+background-color: transparent;
+height: 50px;
+width: 50px;
+}
+
+.ibanez {
+background-size: contain;
+background-color: transparent;
+height: 50px;
+width: 50px;
+}
+
+.gretsch {
+background-size: contain;
+background-color: transparent;
+height: 50px;
+width: 50px;
+}
+
+/* Cards */
+
+.cards-p{
+border-radius: 10px;
+padding: 0 5px;
+}
+
+.cards-container {
+max-width: 576px;
+padding: 50px 10px;
+gap: 10px;
+/* Box-shadow lindo en "proximos productos"
+/* box-shadow: 11px 28px 50px rgba(249, 2, 2, 0.2); */
+}
+
+
+/* Proximamente */
+
+.new-products {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.next-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 5px;
+}
+
+/* News */
+
+.h3 {
+    font-size: 14px;
+}
+
+.news {
+    width: 100%;
+    max-width: 576px;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form input{
+    width: 160px;
+    height: 30px;
+    font-size: 13px;
+}
+
+.btn-subs button {
+    width: 250px;
+    height: 50px;
+    border: solid 2px rgb(255, 255, 255);
+}
+
+.socials {
+    max-width: 576px;
+    gap: 10px;
+    padding: 0;
+}
+
+.socials i{
+    padding: 3px 4px;
+    font-size: 20px;
+}
+
+.socials h4{
+    font-size: 13px;
+}
+
+/* Footer */
+
+.footer {
+    max-width: 576px;;
+    height: 300px;
+    padding: 30px 0;
+}
+
+.description-footer {
+    padding: 5px 5px 0 5px;
+    display: flex;
+    justify-content: left;
+    text-align: baseline;
+}
+
+.logo-footer img {
+display: none;
+}
+
+.footer .description-footer h5{
+padding: 3px 0 3px 0;
+font-size: 15px;
+color: white;
+}
+
+.footer .description-footer li{
+    padding: 3px 0 3px 0;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif2;
+}
+
+/* HR links footer */ 
+
+.ul-1 .hr-final {
+width: 80%;
+}
+
+
+.ul-2 .hr-final {
+width: 80%;
+}
+
+.ul-3 .hr-final {
+width: 90%;
+}
+
+}
